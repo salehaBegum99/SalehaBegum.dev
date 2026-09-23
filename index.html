@@ -29,9 +29,34 @@
     @media(max-width:920px){.identity-rail{display:none}.hero{grid-template-columns:1fr;min-height:auto}.portrait-wrap{min-height:620px;max-width:660px}.transform-shell{grid-template-columns:1fr}.transform-intro{position:static}.services{grid-template-columns:1fr 1fr}.services .service:last-child{grid-column:span 2}.skills-shell{grid-template-columns:1fr}.skill-copy{position:static}.journey-intro{grid-template-columns:1fr;gap:42px}.journey-visual{width:min(100%,520px);margin:auto}.journey-copy{text-align:center}.journey-copy h2,.journey-copy .intro-text,.journey-copy .belief{margin-left:auto;margin-right:auto}.journey-links{justify-content:center}.timeline{grid-template-columns:repeat(2,1fr);margin-top:56px}.projects{grid-template-columns:1fr}.project:first-child{grid-row:auto;min-height:540px}.section-head{grid-template-columns:1fr}.process-grid{grid-template-columns:1fr 1fr}}
     @media(max-width:610px){.wrap{width:min(100% - 28px,1180px)}nav{height:68px}.navlinks>a:not(.nav-cta){display:none}.nav-cta{padding:8px 12px!important}.hero{padding:52px 0 68px;gap:20px}.hero:before{left:-22vw;top:9%;opacity:.7}h1{font-size:clamp(39px,11.5vw,48px)}.lead{font-size:17px}.actions .btn{width:100%}.portrait-wrap{min-height:470px}.portrait{inset:10px 5px 30px}.fc1{left:0;bottom:45px}.fc2{right:0;top:35px}.proof{gap:15px}.transformation{padding:58px 0 10px}.transform-row{grid-template-columns:1fr 34px 1fr;padding:15px 13px;gap:7px}.transform-row span{font-size:13px}.transform-row small{font-size:11px}.services{grid-template-columns:1fr}.services .service:last-child{grid-column:auto}.service{min-height:270px}.service h3{margin-top:48px}.skills{gap:0}.skill{grid-template-columns:44px 1fr}.level{display:none}.journey-shell:before{top:-28px}.journey-visual{border-radius:23px;aspect-ratio:4/5}.journey-visual:after{inset:11px;border-radius:15px}.journey-number{left:20px;top:20px}.journey-status{left:20px;right:20px;bottom:20px}.journey-status b{font-size:15px}.journey-status small{font-size:11px}.journey-copy h2{font-size:clamp(30px,8.6vw,38px);line-height:1.08;margin-top:12px;letter-spacing:-.045em}.journey-copy h2 .journey-accent{font-size:clamp(29px,8.2vw,36px);margin-top:5px}.journey-copy .intro-text{font-size:15px;line-height:1.68}.journey-copy .belief{font-size:17px;line-height:1.5;padding:16px;text-align:left}.journey-links{gap:14px}.timeline{grid-template-columns:1fr;gap:10px;margin-top:39px}.moment{min-height:0;padding:47px 19px 20px}.moment:before{left:19px;top:18px}.moment:after{font-size:62px;top:35px}.moment h3{font-size:17px}.moment p{font-size:13px}.projects .project{min-height:330px}.project:first-child{min-height:520px}.project-foot{display:block}.process-grid{grid-template-columns:1fr}.contact{border-radius:3px 23px 3px 23px}section{padding:78px 0}.section-head{margin-bottom:34px}.code-constellation{display:none}.blueprint{opacity:.2;background-size:52px 52px,52px 52px,13px 13px,13px 13px}}
     @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+    /* Signal Lab creative system */
+    body{cursor:default}
+    .progress-line{position:fixed;left:0;top:0;width:var(--progress,0%);height:3px;background:linear-gradient(90deg,var(--mint),var(--cyan),var(--gold));box-shadow:0 0 22px rgba(52,232,181,.55);z-index:100;transition:width .08s linear}
+    .boot{position:fixed;inset:0;z-index:200;display:grid;place-items:center;background:#05070c;transition:opacity .55s ease,visibility .55s ease}.boot.done{opacity:0;visibility:hidden}.boot-core{width:min(520px,calc(100% - 48px));text-align:center}.boot-mark{font:900 clamp(52px,10vw,110px)/.82 ui-sans-serif,sans-serif;letter-spacing:-.09em;color:#f4f8ff}.boot-mark i{font-style:normal;color:var(--mint)}.boot-copy{display:flex;justify-content:space-between;color:#7890a8;font:700 11px/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;margin:27px 0 12px}.boot-track{height:2px;background:#142231;overflow:hidden}.boot-track:after{content:"";display:block;width:55%;height:100%;background:var(--mint);animation:bootline .9s cubic-bezier(.65,0,.2,1) forwards}@keyframes bootline{to{transform:translateX(100%)}}
+    .section-dock{position:fixed;right:18px;top:50%;transform:translateY(-50%);z-index:25;display:grid;gap:8px}.dock-link{width:44px;height:44px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.09);background:rgba(5,9,15,.72);backdrop-filter:blur(12px);color:#698096;text-decoration:none;font:800 10px ui-monospace,monospace;transition:.25s;clip-path:polygon(0 0,100% 0,100% 72%,72% 100%,0 100%)}.dock-link:hover,.dock-link.active{color:#041812;background:var(--mint);border-color:var(--mint);transform:translateX(-5px)}
+    .lab-status{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:0 0 24px;padding:10px 0;border-block:1px solid rgba(255,255,255,.08);color:#7890a8;font:700 10px/1.3 ui-monospace,monospace;letter-spacing:.13em;text-transform:uppercase}.lab-status strong{color:var(--mint);font-weight:800}.lab-status .coordinates{color:#93a7ba}.hero-copy h1{position:relative}.hero-copy h1:before{content:"SIGNAL / 001";display:block;margin-bottom:14px;color:var(--gold);font:800 10px/1 ui-monospace,monospace;letter-spacing:.22em}.hero-copy h1 .accent{display:inline-block;transform:rotate(-1deg)}.hero-copy .lead{border-left:2px solid var(--mint);padding-left:20px}
+    .portrait-wrap:before{content:"BUILDING CLARITY";position:absolute;z-index:5;right:-34px;bottom:150px;writing-mode:vertical-rl;color:#c9d6e4;font:800 10px/1 ui-monospace,monospace;letter-spacing:.24em}.portrait-wrap:after{content:"01";position:absolute;left:-22px;top:-18px;z-index:5;font:900 92px/.8 ui-sans-serif,sans-serif;letter-spacing:-.1em;color:transparent;-webkit-text-stroke:1px rgba(255,213,74,.52);filter:drop-shadow(0 0 24px rgba(255,213,74,.1))}
+    .signal-console{padding:58px 0 100px}.console-shell{display:grid;grid-template-columns:.72fr 1.28fr;border:1px solid rgba(79,195,255,.18);background:linear-gradient(145deg,rgba(9,18,29,.96),rgba(5,9,15,.96));box-shadow:0 32px 100px rgba(0,0,0,.35);min-height:460px;position:relative;overflow:hidden;clip-path:polygon(0 0,calc(100% - 28px) 0,100% 28px,100% 100%,28px 100%,0 calc(100% - 28px))}.console-shell:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 42%,rgba(52,232,181,.035) 42.2%,transparent 42.5%)}.console-index{padding:38px;border-right:1px solid var(--line);position:relative;z-index:1}.console-kicker{color:var(--mint);font:800 11px/1 ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase}.console-index h2{font-size:clamp(28px,3.5vw,46px);max-width:450px;margin:18px 0 15px}.console-index p{color:var(--muted);max-width:420px}.brief-tabs{display:grid;gap:9px;margin-top:30px}.brief-tab{appearance:none;text-align:left;border:1px solid var(--line);background:rgba(255,255,255,.018);color:#9db0c3;padding:15px 17px;font:750 13px/1.3 ui-sans-serif,sans-serif;cursor:pointer;transition:.25s}.brief-tab span{font:800 10px ui-monospace,monospace;color:#60778e;margin-right:10px}.brief-tab:hover,.brief-tab.active{color:#07120f;background:var(--mint);border-color:var(--mint);transform:translateX(6px)}.brief-tab.active span{color:#174b3d}.console-output{padding:40px;position:relative;z-index:1;display:flex;flex-direction:column}.console-top{display:flex;justify-content:space-between;gap:20px;padding-bottom:18px;border-bottom:1px solid var(--line);color:#71869a;font:700 10px ui-monospace,monospace;letter-spacing:.14em;text-transform:uppercase}.console-top i{font-style:normal;color:var(--gold)}.solution{margin:auto 0}.solution-label{color:var(--coral);font:800 10px ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase}.solution-problem{font-size:clamp(18px,2vw,25px);color:#8ea0b2;text-decoration:line-through;text-decoration-color:var(--coral);margin:13px 0 30px}.solution-arrow{width:56px;height:56px;display:grid;place-items:center;border:1px solid rgba(52,232,181,.35);color:var(--mint);border-radius:50%;font-size:22px;animation:signalpulse 2.6s ease-in-out infinite}@keyframes signalpulse{50%{box-shadow:0 0 0 13px rgba(52,232,181,0);background:rgba(52,232,181,.08)}}.solution-title{font-size:clamp(30px,4vw,58px);line-height:1;letter-spacing:-.055em;margin:27px 0 13px;max-width:700px}.solution-detail{color:#a9bacb;max-width:620px}.solution-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:27px}.solution-tags span{padding:7px 10px;border:1px solid rgba(79,195,255,.18);color:#90bed5;font:700 10px ui-monospace,monospace;text-transform:uppercase;letter-spacing:.08em}
+    .services .service,.project,.moment{isolation:isolate}.service:after,.project:before,.moment .shine{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(420px circle at var(--card-x,50%) var(--card-y,50%),rgba(79,195,255,.11),transparent 42%);opacity:0;transition:opacity .25s}.service:hover:after,.project:hover:before{opacity:1}.project{transform-style:preserve-3d}.project h3,.project p,.project .mock,.project .project-foot{transform:translateZ(1px)}
+    .section-head h2,.transform-intro h2,.skill-copy h2{position:relative}.section-head h2:after,.transform-intro h2:after,.skill-copy h2:after{content:"";display:block;width:58px;height:3px;background:linear-gradient(90deg,var(--gold),transparent);margin-top:18px}
+    .journey-visual{clip-path:polygon(0 0,calc(100% - 34px) 0,100% 34px,100% 100%,0 100%)}.journey-copy .belief{position:relative;padding-left:58px}.journey-copy .belief:before{content:"{ }";position:absolute;left:20px;top:21px;color:var(--gold);font:800 15px ui-monospace,monospace}.moment{border-radius:2px 18px 2px 18px}.moment:nth-child(even){transform:translateY(18px)}.moment:nth-child(even):hover{transform:translateY(10px)}
+    .contact{position:relative;overflow:hidden;clip-path:polygon(0 0,calc(100% - 42px) 0,100% 42px,100% 100%,42px 100%,0 calc(100% - 42px))}.contact:after{content:"LET'S BUILD";position:absolute;right:-14px;bottom:-20px;color:transparent;-webkit-text-stroke:1px rgba(52,232,181,.08);font:900 clamp(64px,11vw,150px)/.8 ui-sans-serif,sans-serif;letter-spacing:-.08em;pointer-events:none}
+    @media(max-width:980px){.section-dock{display:none}.console-shell{grid-template-columns:1fr}.console-index{border-right:0;border-bottom:1px solid var(--line)}.brief-tabs{grid-template-columns:repeat(3,1fr)}.brief-tab{padding:13px}.moment:nth-child(even){transform:none}.portrait-wrap:before{right:-8px}}
+    @media(max-width:640px){.boot-copy{font-size:9px}.lab-status{align-items:flex-start;flex-direction:column;gap:6px}.hero-copy h1:before{margin-bottom:11px}.portrait-wrap:after{font-size:64px;left:-5px}.portrait-wrap:before{display:none}.signal-console{padding:30px 0 70px}.console-shell{clip-path:polygon(0 0,calc(100% - 18px) 0,100% 18px,100% 100%,18px 100%,0 calc(100% - 18px))}.console-index,.console-output{padding:25px 20px}.brief-tabs{grid-template-columns:1fr}.brief-tab:hover,.brief-tab.active{transform:none}.console-output{min-height:470px}.solution-title{font-size:34px}.journey-copy .belief{padding-left:20px;padding-top:52px}.journey-copy .belief:before{top:18px}.contact{clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,22px 100%,0 calc(100% - 22px))}}
+
   </style>
 </head>
-<body>
+<body id="top">
+  <div class="boot" id="boot" aria-hidden="true"><div class="boot-core"><div class="boot-mark">S<i>.</i>B</div><div class="boot-copy"><span>Signal found</span><span>Building clarity</span></div><div class="boot-track"></div></div></div>
+  <div class="progress-line" aria-hidden="true"></div>
+  <aside class="section-dock" aria-label="Page sections">
+    <a class="dock-link active" href="#" data-target="top" aria-label="Introduction">00</a>
+    <a class="dock-link" href="#services" data-target="services" aria-label="Services">01</a>
+    <a class="dock-link" href="#skills" data-target="skills" aria-label="Skills">02</a>
+    <a class="dock-link" href="#journey" data-target="journey" aria-label="Journey">03</a>
+    <a class="dock-link" href="#work" data-target="work" aria-label="Work">04</a>
+  </aside>
   <div class="identity-rail" aria-hidden="true">Saleha · code atelier · 2026</div>
   <div class="ambient" aria-hidden="true">
     <div class="blueprint"></div><div class="aurora a"></div><div class="aurora b"></div><div class="aurora c"></div>
@@ -46,7 +71,7 @@
   </header>
   <main>
     <div class="wrap hero">
-      <div class="hero-copy reveal">
+      <div class="hero-copy reveal"><div class="lab-status"><span><strong>● AVAILABLE</strong> FOR THOUGHTFUL DIGITAL WORK</span><span class="coordinates">HYDERABAD · INDIA · <b id="labTime">00:00 IST</b></span></div>
         <div class="eyebrow"><span class="pulse"></span>Independent developer · product thinker</div>
         <h1>I find the <span class="outline">signal</span> inside messy ideas, and <span class="accent">build it.</span></h1>
         <p class="lead">I’m <strong>Saleha Begum</strong>. I don’t decorate screens. I translate unclear problems into websites and software people can understand, trust and use.</p>
@@ -70,7 +95,32 @@
         </div>
       </div>
     </section>
-    <section id="services">
+
+    <section class="signal-console" id="signal-lab" aria-labelledby="signal-title">
+      <div class="wrap console-shell">
+        <div class="console-index reveal">
+          <div class="console-kicker">Interactive thinking lab</div>
+          <h2 id="signal-title">Give me the messy version.</h2>
+          <p>Select a real-world problem and see how I translate it into a product direction.</p>
+          <div class="brief-tabs" role="tablist" aria-label="Choose a project problem">
+            <button class="brief-tab active" role="tab" aria-selected="true" data-brief="business"><span>01</span>Business feels invisible</button>
+            <button class="brief-tab" role="tab" aria-selected="false" data-brief="operations"><span>02</span>Work feels scattered</button>
+            <button class="brief-tab" role="tab" aria-selected="false" data-brief="community"><span>03</span>Trust feels unclear</button>
+          </div>
+        </div>
+        <div class="console-output reveal" aria-live="polite">
+          <div class="console-top"><span>SALEHA / SIGNAL ENGINE</span><i>READY</i></div>
+          <div class="solution">
+            <div class="solution-label">Raw problem</div>
+            <div class="solution-problem" id="solutionProblem">“People do not understand what makes us different.”</div>
+            <div class="solution-arrow">↓</div>
+            <h3 class="solution-title" id="solutionTitle">A focused digital story that earns trust.</h3>
+            <p class="solution-detail" id="solutionDetail">I shape the message, journey and interface around the one decision your visitor needs to make next.</p>
+            <div class="solution-tags" id="solutionTags"><span>Positioning</span><span>Web experience</span><span>Clear action</span></div>
+          </div>
+        </div>
+      </div>
+    </section>    <section id="services">
       <div class="wrap">
         <div class="section-head reveal"><div><div class="section-label">What I build</div><h2>Not pages. Useful systems with a point of view.</h2></div><p>I combine product thinking, development and thoughtful design so the final result does more than look polished. It moves someone forward.</p></div>
         <div class="services">
@@ -152,6 +202,38 @@
       wrap.addEventListener('pointermove',e=>{const r=wrap.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform='rotateY('+(-2+x*5)+'deg) rotateX('+(-y*4)+'deg)'});
       wrap.addEventListener('pointerleave',()=>card.style.transform='rotateY(-2deg)');
     }
+
+    const boot=document.getElementById('boot');
+    const finishBoot=()=>boot&&boot.classList.add('done');
+    if(reduced){finishBoot()}else{setTimeout(finishBoot,1050)}
+    const updateLab=()=>{
+      const max=document.documentElement.scrollHeight-innerHeight;
+      document.documentElement.style.setProperty('--progress',(max?scrollY/max*100:0)+'%');
+      const t=document.getElementById('labTime');
+      if(t)t.textContent=new Intl.DateTimeFormat('en-IN',{timeZone:'Asia/Kolkata',hour:'2-digit',minute:'2-digit',hour12:false}).format(new Date())+' IST';
+    };
+    updateLab();addEventListener('scroll',updateLab,{passive:true});setInterval(updateLab,30000);
+    const briefs={
+      business:{problem:'“People do not understand what makes us different.”',title:'A focused digital story that earns trust.',detail:'I shape the message, journey and interface around the one decision your visitor needs to make next.',tags:['Positioning','Web experience','Clear action']},
+      operations:{problem:'“Our daily work lives across calls, notes and spreadsheets.”',title:'One calm workflow for the work that matters.',detail:'I map the real process, remove repeated effort and build a responsive system your team can use without confusion.',tags:['Workflow map','Custom software','Mobile first']},
+      community:{problem:'“People care, but they are unsure whether they can trust us.”',title:'Proof, purpose and action in one clear journey.',detail:'I organise credibility, impact and contribution details so visitors understand the mission and know how to help.',tags:['Trust design','Content structure','Conversion clarity']}
+    };
+    document.querySelectorAll('.brief-tab').forEach(btn=>btn.addEventListener('click',()=>{
+      document.querySelectorAll('.brief-tab').forEach(b=>{b.classList.remove('active');b.setAttribute('aria-selected','false')});
+      btn.classList.add('active');btn.setAttribute('aria-selected','true');
+      const d=briefs[btn.dataset.brief],out=document.querySelector('.solution');
+      out.animate([{opacity:.2,transform:'translateY(8px)'},{opacity:1,transform:'translateY(0)'}],{duration:360,easing:'ease-out'});
+      document.getElementById('solutionProblem').textContent=d.problem;
+      document.getElementById('solutionTitle').textContent=d.title;
+      document.getElementById('solutionDetail').textContent=d.detail;
+      document.getElementById('solutionTags').innerHTML=d.tags.map(x=>'<span>'+x+'</span>').join('');
+    }));
+    const dockLinks=[...document.querySelectorAll('.dock-link')];
+    const dockSections=dockLinks.slice(1).map(a=>document.getElementById(a.dataset.target)).filter(Boolean);
+    const dockObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){dockLinks.forEach(a=>a.classList.toggle('active',a.dataset.target===e.target.id))}}),{rootMargin:'-42% 0px -50% 0px'});
+    dockSections.forEach(el=>dockObserver.observe(el));
+    document.querySelectorAll('.service,.project').forEach(card=>card.addEventListener('pointermove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--card-x',((e.clientX-r.left)/r.width*100)+'%');card.style.setProperty('--card-y',((e.clientY-r.top)/r.height*100)+'%')}));
+
     const io=new IntersectionObserver(es=>es.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('show'),Math.min(i*55,220));io.unobserve(e.target)}}),{threshold:.12});
     document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
   </script>
